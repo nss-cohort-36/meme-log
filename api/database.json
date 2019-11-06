@@ -1,3 +1,18 @@
 {
-    "memes": []
+  "memes": [
+    {
+      "name": "Doge Meme",
+      "author": "Anon",
+      "description": "Dogs",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Original_Doge_meme.jpg/300px-Original_Doge_meme.jpg",
+      "id": 1
+    },
+    {
+      "name": "Leo",
+      "author": "Leo",
+      "description": "Leo",
+      "imageUrl": "https://www.lifewire.com/thmb/1p3mrM5_hSoIFQUfh53VK1q4dvg=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/dicaprio3-583e33155f9b58d5b19e3a00.jpg",
+      "id": 2
+    }
+  ]
 }

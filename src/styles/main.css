@@ -1,0 +1,39 @@
+.add-form {
+    display: flex;
+    flex-direction: column;
+    border: 5px ridge darkred;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.add-form section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button {
+    margin-top: 1em;
+    color: white;
+    background-color: darkred;
+    border: .5px solid black;
+}
+
+img {
+    width: 100px;
+}
+
+.meme-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 5px ridge #008b8b;
+    padding: 1em;
+}
+
+.meme-list > section {
+    background-color: #008b8b;
+    padding: .5em;
+    margin: 1em;
+    border: 1px solid black;
+}
