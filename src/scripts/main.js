@@ -11,3 +11,6 @@ apiManager.getAllMemes()
   const memeListRef = document.querySelector(".meme-list")
   memeListRef.innerHTML = memeBuilder.listMemesHtml(response)
 })
+
+
+eventManager.attachEventListenerToMemeList()

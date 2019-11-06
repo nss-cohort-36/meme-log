@@ -10,4 +10,17 @@ export default {
   }),
   getAllMemes: () => fetch(`${baseUrl}/memes`)
     .then(response => response.json()),
+  getSingleMeme: memeId => fetch(`${baseUrl}/memes/${memeId}`)
+    .then(response => response.json()),
+  putMeme: (memeId, meme) => fetch(`${baseUrl}/memes/${memeId}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(meme)
+  }),
+  deleteMeme: memeId => fetch(`${baseUrl}/memes/${memeId}`, {
+    method: "DELETE"
+  })
+    .then(response => response.json())
 }
