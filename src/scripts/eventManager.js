@@ -1,4 +1,5 @@
 import apiManager from "./apiManager.js"
+import memeBuilder from "./memeBuilder.js"
 
 const handleAddButtonEvent = event => {
   // console.log("Add button clicked")
@@ -17,6 +18,16 @@ const handleAddButtonEvent = event => {
   // console.log(newMeme)
 
   apiManager.postMeme(newMeme)
+    .then(() => apiManager.getAllMemes())
+    .then(response => {
+      const memeListRef = document.querySelector(".meme-list")
+      memeListRef.innerHTML = memeBuilder.listMemesHtml(response)
+
+      nameInputRef.value = ""
+      authorInputRef.value = ""
+      descInputRef.value = ""
+      imageInputRef.value = ""
+    })
 }
 
 const eventManager = {
